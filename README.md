@@ -7,7 +7,7 @@ Please refer to [https://hub.docker.com/r/sath89/oracle-12c/](https://hub.docker
 Thanks **sath89** for his great work !
 
 Changes as needed:
- * Easy to use, pull and run
+ * Easy to use, **just pull and run**
  * Impove performance on startup
  * Persist database SID xe in image
  * Delete mount feature
