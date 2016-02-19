@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 # Prevent owner issues on mounted folders
 sudo chown -R oracle:dba /u01/app/oracle
 rm -f /u01/app/oracle/product
