@@ -15,11 +15,10 @@ ENV DBCA_TOTAL_MEMORY 1024
 ENV ORACLE_HOME	/u01/app/oracle/product/12.1.0/xe
 ENV ORACLE_SID xe
 
-ADD /scripts/initdb.sh /initdb.sh
-ADD /scripts/startAll.sh /startAll.sh
-RUN /initdb.sh
-RUN rm /initdb.sh
+ADD scripts /scripts
+
+RUN /scripts/initdb.sh
 
 EXPOSE 1521 8080
 
-CMD /startAll.sh
+CMD /scripts/startup.sh

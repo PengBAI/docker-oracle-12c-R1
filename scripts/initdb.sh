@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Prevent owner issues on mounted folders
-chown -R oracle:dba /u01/app/oracle
+sudo chown -R oracle:dba /u01/app/oracle
 rm -f /u01/app/oracle/product
 ln -s /u01/app/oracle-product /u01/app/oracle/product
 
@@ -23,4 +23,4 @@ su oracle -c 'echo -e "0Racle$\n8080" | $ORACLE_HOME/bin/sqlplus -S / as sysdba 
 su oracle -c 'echo -e "${ORACLE_HOME}\n\n" | $ORACLE_HOME/bin/sqlplus -S / as sysdba @apex_epg_config_core.sql > /dev/null'
 su oracle -c 'echo -e "ALTER USER ANONYMOUS ACCOUNT UNLOCK;" | $ORACLE_HOME/bin/sqlplus -S / as sysdba > /dev/null'
 
-echo "Database ready to use. Enjoy! ;)"
+rm /scripts/initdb.sh
