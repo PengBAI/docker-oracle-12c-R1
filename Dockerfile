@@ -18,6 +18,7 @@ ENV ORACLE_SID xe
 ADD /scripts/initdb.sh /initdb.sh
 ADD /scripts/startAll.sh /startAll.sh
 RUN /initdb.sh
+RUN rm /initdb.sh
 
 EXPOSE 1521 8080
 
