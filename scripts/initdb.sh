@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # Prevent owner issues on mounted folders
-sudo chown -R oracle:dba /u01/app/oracle
+chown -R oracle:dba /u01/app/oracle
 rm -f /u01/app/oracle/product
 ln -s /u01/app/oracle-product /u01/app/oracle/product
 
@@ -24,3 +24,4 @@ su oracle -c 'echo -e "${ORACLE_HOME}\n\n" | $ORACLE_HOME/bin/sqlplus -S / as sy
 su oracle -c 'echo -e "ALTER USER ANONYMOUS ACCOUNT UNLOCK;" | $ORACLE_HOME/bin/sqlplus -S / as sysdba > /dev/null'
 
 rm /scripts/initdb.sh
+chmod +x /scripts/startup.sh
