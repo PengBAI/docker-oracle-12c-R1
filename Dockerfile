@@ -16,7 +16,7 @@ ENV ORACLE_HOME	/u01/app/oracle/product/12.1.0/xe
 ENV ORACLE_SID xe
 
 ADD scripts /scripts
-RUN chmod +x /scripts/install.sh
+RUN chmod +x /scripts/*
 RUN /scripts/install.sh
 
 EXPOSE 1521 8080
