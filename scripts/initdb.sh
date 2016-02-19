@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 # Prevent owner issues on mounted folders
 chown -R oracle:dba /u01/app/oracle
