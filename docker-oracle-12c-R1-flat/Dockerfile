@@ -1,5 +1,6 @@
 ########################################
-#  refer to https://github.com/MaksymBilenko/docker-oracle-12c
+#  refer to https://github.com/PengBAI/docker-oracle-12c-R1
+#  based on https://github.com/MaksymBilenko/docker-oracle-12c
 #  localhost:1521:xe	
 #		username: system		password: oracle
 #  http://localhost:8080/apex 	
