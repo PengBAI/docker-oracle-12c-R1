@@ -1,8 +1,9 @@
 # docker-oracle-12c-R1
 ## Oracle 12c Release 1 
-Based on [https://github.com/MaksymBilenko/docker-oracle-12c](https://github.com/MaksymBilenko/docker-oracle-12c).
 
-Please refer to [https://hub.docker.com/r/sath89/oracle-12c/](https://hub.docker.com/r/sath89/oracle-12c/) for more detail.
+Image on docker hub: [https://hub.docker.com/r/pengbai/docker-oracle-12c-r1/](https://hub.docker.com/r/pengbai/docker-oracle-12c-r1/)
+
+Based on [https://github.com/MaksymBilenko/docker-oracle-12c](https://github.com/MaksymBilenko/docker-oracle-12c).
 
 Thanks **sath89** for his great work !
 
