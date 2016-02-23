@@ -16,4 +16,4 @@ ENV ORACLE_SID xe
 
 EXPOSE 1521 8080
 
-CMD /startAll.sh
+CMD /scripts/startup.sh
