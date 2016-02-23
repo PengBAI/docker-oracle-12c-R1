@@ -7,7 +7,6 @@ su oracle -c 'echo startup\; | $ORACLE_HOME/bin/sqlplus -S / as sysdba'
 echo "Starting web console on 8080"
 su oracle -c 'echo EXEC DBMS_XDB.sethttpport\(8080\)\; | $ORACLE_HOME/bin/sqlplus -S / as sysdba'
 
-echo "Oracle started Successfully !"
 while true; do
     sleep 1m
 done;
