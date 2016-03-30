@@ -9,6 +9,7 @@ Thanks **sath89** for his great work !
 
 Changes as needed:
  * Easy to use, **just pull and run**
+ * Add startup sql **init** database feature
  * Impove performance on startup
  * Persist database SID xe in image
  * Delete mount feature
