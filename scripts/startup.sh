@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-mkdir -p /entrypoint-initdb.d
-
 echo "Starting tnslsnr"
 su oracle -c "/u01/app/oracle/product/12.1.0/xe/bin/tnslsnr &"
 echo "Starting database"

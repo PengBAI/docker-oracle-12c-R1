@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+mkdir -p /entrypoint-initdb.d
 # Prevent owner issues on mounted folders
 chown -R oracle:dba /u01/app/oracle
 rm -f /u01/app/oracle/product
