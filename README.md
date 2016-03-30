@@ -26,6 +26,7 @@ docker run -d -p 8080:8080 -p 1521:1521 pengbai/docker-oracle-12c-r1
 ```
 
 Option: Execute automatically scripts sql when contaner startup:
+
 In folder where you put your *.sql files for database init from /local-initdb to /entrypoint-initdb.d in contaner
 ```
 docker run -d -p 8080:8080 -p 1521:1521 -v /local-initdb:/entrypoint-initdb.d pengbai/docker-oracle-12c-r1
