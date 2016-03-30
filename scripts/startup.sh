@@ -8,7 +8,7 @@ su oracle -c 'echo startup\; | $ORACLE_HOME/bin/sqlplus -S / as sysdba'
 echo "Starting web console on 8080"
 su oracle -c 'echo EXEC DBMS_XDB.sethttpport\(8080\)\; | $ORACLE_HOME/bin/sqlplus -S / as sysdba'
 
-echo
+echo "Database init..."
 for f in /entrypoint-initdb.d/*; do
     case "$f" in
         *.sh)  echo "$0: running $f"; . "$f" ;;
@@ -17,6 +17,7 @@ for f in /entrypoint-initdb.d/*; do
     esac
     echo
 done
+echo "End init."
 
 echo "Oracle started Successfully !"
 while true; do
