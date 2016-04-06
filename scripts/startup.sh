@@ -13,7 +13,7 @@ for f in /entrypoint-initdb.d/*; do
     case "$f" in
         *.sh)  echo "$0: running $f"; . "$f" ;;
         *.sql) echo "$0: running $f"; su oracle -c "echo \@$f\; | $ORACLE_HOME/bin/sqlplus -S / as sysdba" ;;
-        *)     echo "$0: ignoring $f" ;;
+        *)     echo "No volume sql script, ignoring $f" ;;
     esac
     echo
 done
