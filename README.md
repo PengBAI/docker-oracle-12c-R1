@@ -8,11 +8,10 @@ Based on [https://github.com/MaksymBilenko/docker-oracle-12c](https://github.com
 Thanks **sath89** for his great work !
 
 Changes as needed:
+ * Add startup sql **init** database feature **NEW!**
  * Easy to use, **just pull and run**
- * Add startup sql **init** database feature
  * Impove performance on startup
  * Persist database SID xe in image
- * Delete mount feature
 
 ## Description
 
@@ -26,7 +25,7 @@ Run with 8080 and 1521 ports opened:
 docker run -d -p 8080:8080 -p 1521:1521 pengbai/docker-oracle-12c-r1
 ```
 
-Option: Execute automatically scripts sql when contaner startup:
+**NEW!** Option: Execute automatically scripts sql when contaner startup:
 
 In folder where you put your *.sql files for database init from /local-initdb to /entrypoint-initdb.d in contaner
 ```
