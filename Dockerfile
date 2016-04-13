@@ -12,7 +12,7 @@ MAINTAINER https://github.com/PengBAI
 
 LABEL oracle.version=oracle-12c-R1
 
-ENV DBCA_TOTAL_MEMORY 1024
+ENV DBCA_TOTAL_MEMORY 512
 ENV ORACLE_HOME	/u01/app/oracle/product/12.1.0/xe
 ENV ORACLE_SID xe
 
