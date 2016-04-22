@@ -1,7 +1,7 @@
 # docker-oracle-12c-R1
 ## Oracle 12c Release 1 
 
-[![](https://badge.imagelayers.io/pengbai/docker-oracle-12c-r1:latest.svg)](https://imagelayers.io/?images=pengbai/docker-oracle-12c-r1:latest 'Get your own badge on imagelayers.io')
+[![imagelayers.io](https://badge.imagelayers.io/pengbai/docker-oracle-12c-r1:latest.svg)](https://imagelayers.io/?images=pengbai/docker-oracle-12c-r1:latest 'Get your own badge on imagelayers.io')
 [![Docker Hub](https://img.shields.io/badge/docker-ready-blue.svg)](https://hub.docker.com/r/pengbai/docker-oracle-12c-r1/)
 
 Image on docker hub: [https://hub.docker.com/r/pengbai/docker-oracle-12c-r1/](https://hub.docker.com/r/pengbai/docker-oracle-12c-r1/)
