@@ -19,7 +19,6 @@ ENV ORACLE_SID xe
 ADD scripts /scripts
 RUN chmod +x /scripts/*
 RUN /scripts/install.sh
-RUN touch /var/log/startup.log
 
 EXPOSE 1521 8080
 

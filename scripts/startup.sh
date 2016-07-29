@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
-
+touch /var/log/startup.log
+tail -f /var/log/startup.log
 echo "Starting tnslsnr" >> /var/log/startup.log 2>&1
 su oracle -c "/u01/app/oracle/product/12.1.0/xe/bin/tnslsnr &"  >> /var/log/startup.log 2>&1
 echo "Starting database" >> /var/log/startup.log 2>&1
@@ -20,8 +21,6 @@ done
 echo "End init." >> /var/log/startup.log 2>&1
 
 echo "Oracle started Successfully !" >> /var/log/startup.log 2>&1
-
-tail -f /var/log/startup.log
 
 while true; do
     sleep 1m
