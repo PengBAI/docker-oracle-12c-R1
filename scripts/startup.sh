@@ -20,6 +20,9 @@ done
 echo "End init." >> /var/log/startup.log 2>&1
 
 echo "Oracle started Successfully !" >> /var/log/startup.log 2>&1
+
+tail -f /var/log/startup.log
+
 while true; do
     sleep 1m
 done;
