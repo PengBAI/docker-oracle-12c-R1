@@ -7,8 +7,7 @@
 Image on docker hub: [https://hub.docker.com/r/pengbai/docker-oracle-12c-r1/](https://hub.docker.com/r/pengbai/docker-oracle-12c-r1/)
 
 Changes as needed:
- * Add startup sql **init** database feature **NEW!**
- * Easy to use, **just pull and run**
+ * Add startup sql **init** database feature
  * Impove performance on startup
  * Persist database SID xe in image
 
